@@ -1,0 +1,14 @@
+.in, .out {
+	-webkit-animation-timing-function: ease-in-out;
+	-webkit-animation-duration: 400ms !important;
+}
+.fixed-text {
+	height: auto !important; /* !important is used to force override. */
+}
+.edit { margin-left: 5px; margin-right: 10px; }
+.center { text-align: center; }
+img.center { display: block; margin-left: auto; margin-right: auto; }
+.tasks { height: 100%; }
+.ez 	{ color: #99FF99 !important; }
+.mid 	{ color: #FFF985 !important; }
+.hard { color: #FF5F69 !important; }
