@@ -16,3 +16,13 @@ img.center { display: block; margin-left: auto; margin-right: auto; }
 .ez 	{ color: #99FF99 !important; }
 .mid 	{ color: #FFF985 !important; }
 .hard { color: #FF5F69 !important; }
+
+#avat-right, #avat-left, #decor-left, #decor-right {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.noStyle {
+	background-color: rgba(0, 0, 0, 0) !important;
+  border: none !important;
+}

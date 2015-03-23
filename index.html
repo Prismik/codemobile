@@ -33,7 +33,9 @@
 				<div class="ui-bar ui-bar-a" style="height:60px"><a href="#algo">Introduction</a></div>
 			</div>
 			<div class="ui-block-b">
-				<div class="ui-bar ui-bar-a" style="height:60px"><a href="#algo">Avancement</a></div>
+				<div class="ui-bar ui-bar-a" style="height:60px">
+					<a href="#algoPop" data-rel="popup" data-position-to="window" data-transition="pop">Avancement</a>
+				</div>
 			</div>
 			<div class="ui-block-c">
 				<div class="ui-bar ui-bar-a" style="height:60px"><a href="#algo">Recursion</a></div>
@@ -45,49 +47,61 @@
 			<h4>User</h4>
 	</div>
 	-->
+
+	<div data-role="popup" id="algoPop" data-overlay-theme="b" data-theme="b" data-dismissible="false" style="max-width:400px;">
+		<div data-role="header" data-theme="a">
+			<h1>Avancement</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<h3 class="ui-title">Etes vous sur de vouloir jouer ce parcours?</h3>
+			<p>Description du parcours. Lorem ipsum. Niveau de difficulte.</p>
+			<a href="#" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-rel="back">Annuler</a>
+			<a href="#algo" class="ui-btn ui-corner-all ui-shadow ui-btn-inline ui-btn-b" data-transition="flow">Aller</a>
+		</div>
+	</div>
 </div>
 
 <!-- OPTIONS -->
 <div data-role="page" id="options">
 	<div data-role="header">
 		<h1>Options</h1>
-		<a data-rel="back" data-direction="reverse" href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Back</a>
+		<a data-rel="back" data-direction="reverse" href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Retour</a>
 	</div>
 
 	<div data-role="ui-content">
 		<div class="ui-grid-b">
 			<div class="ui-block-a">
-				<div class="ui-bar ui-bar-a" style="height:120px">
-				<a href="#" class="ui-btn ui-btn-right ui-icon-arrow-l ui-btn-icon-notext">Icon only</a>
+				<div class="ui-bar ui-bar-a noStyle" style="height:120px">
+				<a href="#" id="avat-left"class="ui-btn ui-btn-right ui-icon-arrow-l ui-btn-icon-notext">Icon only</a>
 				</div>
 			</div>
 			<div class="ui-block-b">
 				<div class="ui-bar ui-bar-a" style="height:120px">
 					<p class="center">Avatar</p>
-					<img class="center" src="av1.png" height="60" width="60">
+					<img id="avatImg" class="center" src="av0.png" height="60" width="60">
 				</div>
 			</div>
 			<div class="ui-block-c">
-				<div class="ui-bar ui-bar-a" style="height:120px">
-					<a href="#" class="ui-btn ui-btn-left ui-icon-arrow-r ui-btn-icon-notext">Icon only</a>
+				<div class="ui-bar ui-bar-a noStyle" style="height:120px">
+					<a href="#" id="avat-right" class="ui-btn ui-btn-left ui-icon-arrow-r ui-btn-icon-notext">Icon only</a>
 				</div>
 			</div>
 		</div>
 		<div class="ui-grid-b">
 			<div class="ui-block-a">
-				<div class="ui-bar ui-bar-a" style="height:120px">
-					<a href="#" class="ui-btn ui-btn-right ui-icon-arrow-l ui-btn-icon-notext">Icon only</a>
+				<div class="ui-bar ui-bar-a noStyle" style="height:120px">
+					<a href="#" id="decor-left" class="ui-btn ui-btn-right ui-icon-arrow-l ui-btn-icon-notext">Icon only</a>
 				</div>
 			</div>
 			<div class="ui-block-b">
 				<div class="ui-bar ui-bar-a" style="height:120px">
 					<p class="center">Decor</p>
-					<img class="center" src="dec2.png" height="60" width="100">
+					<img id="decImg" class="center" src="dec0.png" height="60" width="100">
 				</div>
 			</div>
 			<div class="ui-block-c">
-				<div class="ui-bar ui-bar-a" style="height:120px">
-					<a href="#" class="ui-btn ui-btn-left ui-icon-arrow-r ui-btn-icon-notext">Icon only</a>
+				<div class="ui-bar ui-bar-a noStyle" style="height:120px">
+					<a href="#" id="decor-right" class="ui-btn ui-btn-left ui-icon-arrow-r ui-btn-icon-notext">Icon only</a>
 				</div>
 			</div>
 		</div>
@@ -103,7 +117,7 @@
 <div data-role="page" id="algo">
 	<div data-role="header">
 		<h1>Parcours</h1>
-		<a data-rel="back" data-direction="reverse" href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Back</a>
+		<a data-rel="back" data-direction="reverse" href="#" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Retour</a>
 	</div>
 
 	<div data-role="ui-content">
