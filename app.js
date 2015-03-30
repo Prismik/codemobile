@@ -6,4 +6,8 @@ $(document).on('pageinit','#splash', function() {
 
 $(document).ready(function() {
 	Config.init();
+
+	var operations = [{ "name" : "avancer", "label" : "Nombre de cases :" },
+					  { "name" : "tourner", "label" : "Nombre de degres :", "valeurs" : [90,180,-90] }];
+	Epreuve.init("Introduction", operations, Config.avatar(), Config.decor());
 });

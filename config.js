@@ -6,6 +6,7 @@
 		self.decors = [];
 		for (var i = 0; i != 5; i++) {
 			self.avatars[i] = new Image();
+			self.avatars[i].id = 'avatar';
 			self.avatars[i].src = 'av' + i + '.png';
 			if (i <= 2) {
 				self.decors[i] = new Image();
@@ -48,5 +49,9 @@
 
 	self.avatar = function() {
 		return self.avatars[self.avIndex];
+	};
+
+	self.decor = function() {
+		return self.decors[self.decIndex];
 	};
 })(jQuery, this.Config = { });
