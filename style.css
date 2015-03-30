@@ -9,9 +9,11 @@ img {
 .fixed-text {
 	height: auto !important; /* !important is used to force override. */
 }
+.animContent { min-width: 240px !important; }
+#quit, .dlt { background-color: #FF5F69 !important; text-shadow: none;}
 .edit { margin-left: 5px; margin-right: 10px; min-height: 150px; display: block; border:2px; }
 .center { text-align: center; }
-img.center { display: block; margin-left: auto; margin-right: auto; }
+img.center, table.center, .round-button.center { display: block; margin-left: auto; margin-right: auto; }
 .tasks { height: 100%; }
 .ez 	{ color: #99FF99 !important; }
 .mid 	{ color: #FFF985 !important; }
@@ -22,49 +24,55 @@ img.center { display: block; margin-left: auto; margin-right: auto; }
 	transform: translateY(-50%);
 }
 
+#addButton { background-color: #34DD91; }
 .noStyle {
 	background-color: rgba(0, 0, 0, 0) !important;
-    border: none !important;
+	border: none !important;
 }
 
 .board {
-    background-color:  #464646;
-    height: 240px;
-    width: 240px;
+	background-color:  #464646;
+	height: 240px;
+	width: 240px;
+	border: none;
+	border-spacing: 0px;
 }
 
 .board tr {
-    height:60px;
+	height:60px;
 }
 
 .board td {
-    width: 60px;
-    position: relative;
+	width: 60px;
+	position: relative;
 }
 
 .board td img {
-    position: absolute;
-    top: 0;
-    left: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 60px;
+	height: 60px;
 }
 
 /* Emprunté de Jose Vargas à http://codeitdown.com/css-round-buttons/*/
 .round-button {
-    display:block;
-    width:50px;
-    height:50px;
-    line-height:50px;
-    border: 2px solid #f5f5f5;
-    border-radius: 50%;
-    color:#f5f5f5;
-    text-align:center;
-    text-decoration:none;
-    background: #464646;
-    box-shadow: 0 0 3px gray;
-    font-size:20px;
-    font-weight:bold;
+	cursor: pointer;
+	display:block;
+	width:50px;
+	height:50px;
+	line-height:50px;
+	border: 2px solid #f5f5f5;
+	border-radius: 50%;
+	color:#f5f5f5;
+	text-align:center;
+	text-decoration:none;
+	background-color: #34DD91;
+	box-shadow: 0 0 3px gray;
+	font-size:20px;
+	font-weight:bold;
 }
 .round-button:hover {
-    background: #262626;
+	background: green;
 }
 /* Fin de l'emprunt*/

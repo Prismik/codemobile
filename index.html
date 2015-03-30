@@ -25,7 +25,7 @@
 <div data-role="page" id="main">
 	<div data-role="header">
 		<h1>Parcours</h1>
-		<a href="#" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Quitter</a>
+		<a href="#" id="quit" class="ui-btn ui-corner-all ui-btn-inline ui-mini footer-button-left ui-btn-icon-left ui-icon-power">Quitter</a>
 		<a href="#options" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-gear">Options</a>
 	</div>
 
@@ -160,8 +160,8 @@
 <div data-role="page" id="algo">
 	<div data-role="header">
 		<h1>Parcours</h1>
-		<a data-rel="back" data-direction="reverse" href="#main" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Retour</a>
-		<a href="#animation" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-video">Jouer</a>
+		<a href="#main" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Retour</a>
+		<a href="#animation" class="js-anim ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-video">Jouer</a>
 	</div>
 
 	<div data-role="ui-content">
@@ -178,11 +178,6 @@
 		</div>
 		<div class="steps">
 			<ol id="steps" data-role="listview" data-split-icon="delete" data-split-theme="a" data-inset="true">
-								<li>
-					<a href="#">avance 3 cases</a>
-					<a href="#"></a>
-				</li>
-
 			</ol>
 		</div>
 	</div>
@@ -205,40 +200,45 @@
 <div data-role="page" id="animation">
 	<div data-role="header">
 		<h1>Animation</h1>
-		<a data-rel="back" data-direction="reverse" href="#main" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Retour</a>
-		<a href="#algo" class="ui-btn-right ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-video">Algo</a>
+		<a data-rel="back" href="#algo" class="ui-btn-left ui-btn ui-btn-inline ui-mini ui-corner-all ui-btn-icon-left ui-icon-back">Retour</a>
 	</div>
 
 	<div data-role="ui-content">
-		<table class="board center">
-			<tr>
-				<td><img id="r1c1" src=""/></td>
-				<td><img id="r1c2" src=""/></td>
-				<td><img id="r1c3" src=""/></td>
-				<td><img id="r1c4" src=""/></td>
-			</tr>
-			<tr>
-				<td><img id="r2c1" src=""/></td>
-				<td><img id="r2c2" src=""/></td>
-				<td><img id="r2c3" src=""/></td>
-				<td><img id="r2c4" src=""/></td>
-			</tr>
-			<tr>
-				<td><img id="r3c1" src=""/></td>
-				<td><img id="r3c2" src=""/></td>
-				<td><img id="r3c3" src=""/></td>
-				<td><img id="r3c4" src=""/></td>
-			</tr>
-			<tr>
-				<td><img id="r4c1" src=""/></td>
-				<td><img id="r4c2" src=""/></td>
-				<td><img id="r4c3" src=""/></td>
-				<td><img id="r4c4" src=""/></td>
-			</tr>
-		</table>
+		<div class="ui-grid-b">
 
-		<div class="center">
-			<div id="playButton" class="round-button">Play</div>
+			<div class="ui-block-1 animContent noStyle">
+				<div class="ui-bar ui-bar-a">
+					<table class="board center">
+						<tr>
+							<td><img id="r1c1" src=""/></td>
+							<td><img id="r1c2" src=""/></td>
+							<td><img id="r1c3" src=""/></td>
+							<td><img id="r1c4" src=""/></td>
+						</tr>
+						<tr>
+							<td><img id="r2c1" src=""/></td>
+							<td><img id="r2c2" src=""/></td>
+							<td><img id="r2c3" src=""/></td>
+							<td><img id="r2c4" src=""/></td>
+						</tr>
+						<tr>
+							<td><img id="r3c1" src=""/></td>
+							<td><img id="r3c2" src=""/></td>
+							<td><img id="r3c3" src=""/></td>
+							<td><img id="r3c4" src=""/></td>
+						</tr>
+						<tr>
+							<td><img id="r4c1" src=""/></td>
+							<td><img id="r4c2" src=""/></td>
+							<td><img id="r4c3" src=""/></td>
+							<td><img id="r4c4" src=""/></td>
+						</tr>
+					</table>
+					<div>
+						<div id="playButton" class="center round-button">Play</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 
