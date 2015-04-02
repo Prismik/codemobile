@@ -6,18 +6,21 @@
 		self.name = name;
 		self.operations = operations;
 		self.isFinish = false;
-		self.player = {"x" : 1, "y" : 1, "angle" : 0, "avatar" : Config.avatar()}
+		self.player = {'x' : 1, 'y' : 1, 'angle' : 0, 'avatar' : Config.avatar()}
 
 		for (var i = 0; i < (self.operations.length || 0); ++i)
-			$("#operations").append("<option value=" + i + ">" + self.operations[i].name + "</option>");
+			$('#operations').append('<option value=' + i + '>' + self.operations[i].name + '</option>');
 
-		$("#operations").change(function() {
-			$("#operationLabel").text(self.operations[$("#operations").val()].label);
+		$('#operations').change(function() {
+			$('#operationLabel').text(self.operations[$('#operations').val()].label);
 		});
 
-		$("#addButton").on("click", self.add);
-		$("#playButton").on("click", self.play);
-
+		$('#addButton').click(self.add);
+		$('#playButton').click(self.play);
+		$('#delAllBtn').click(function () {
+			self.algo = [];
+			$('#steps').empty();
+		});
 		// Hardcoded board
 		for (var i = 1; i <= 4; ++i)
 			for (var j = 1; j <= 4; ++j)
