@@ -7,8 +7,8 @@ img {
 	-webkit-animation-duration: 400ms !important;
 }
 #decImg { max-height: 60px !important; }
-.big { margin-top: -1px !important; width: 50px !important; height: 133px !important; margin-bottom: 0px !important; }
-.header { background-color: #333 !important; }
+/*.big { margin-top: -1px !important; width: 50px !important; height: 133px !important; margin-bottom: 0px !important; }*/
+.header { background-color: #333 !important; border-top: none !important; }
 .header h1 { color: #FFF !important; text-shadow: none !important; }
 .fixed-text {
 	height: auto !important; /* !important is used to force override. */
@@ -24,10 +24,12 @@ img.center, table.center, .round-button.center { display: block; margin-left: au
 .mid 	{ color: #FFF985 !important; }
 .hard { color: #FF5F69 !important; }
 
+
 #avat-right, #avat-left, #decor-left, #decor-right {
-	top: 50%;
-	transform: translateY(-50%);
+	top: 30%;
+	/*transform: translateY(-50%);*/
 }
+
 
 #addButton, .js-anim { background-color: #34DD91 !important; text-shadow: none !important; }
 .noStyle {
